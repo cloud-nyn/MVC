@@ -1,0 +1,15 @@
+{
+  "name": "question3_4",
+  "version": "1.0.0",
+  "description": "Question 3 and 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alazar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-generator": "^4.16.1"
+  }
+}

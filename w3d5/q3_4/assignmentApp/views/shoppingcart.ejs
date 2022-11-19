@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product</title>
+    <link href="/stylesheets/cartStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include header %>
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-box">
+        <% itemsInCart.forEach(item=>{%>
+        <div id="cart-item">
+            <img src="/images/item.png">
+            <hr>
+            <h2><%= item.name %></h2>
+            <h3>$<%= item.price %></h3>
+            <h5><%= item.description %></h5>
+        </div>
+        <%})%>
+    </div>
+    <button type="submit">Checkout</button>
+    <%- include footer %> 
+  </body>
+</html>
